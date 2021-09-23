@@ -1,4 +1,4 @@
-Django Admin Row Actions
+Equality Django Admin Row Actions
 ========================
 
 Allows you to easily define a drop-down 'actions' menu that is appended as the final column in your model's changelist and perform actions on that row.
@@ -14,13 +14,7 @@ Installation
 1. Install from PyPI:
 
     ```bash
-    pip install django-admin-row-actions
-    ```
-
-    or install using pip and git:
-
-    ```bash
-    pip install git+https://github.com/DjangoAdminHackers/django-admin-row-actions.git
+    pip install eq-django-admin-row-actions
     ```
 
 2. Add to INSTALLED_APPS:
@@ -28,7 +22,7 @@ Installation
     ```python
     INSTALLED_APPS = [
         ...
-        'django_admin_row_actions',
+        'eq_django_admin_row_actions',
         ...
     ]
     ```
@@ -36,7 +30,7 @@ Installation
 3. Add the mixin to your ModelAdmin:
 
     ```python
-    from django_admin_row_actions import AdminRowActionsMixin
+    from eq_django_admin_row_actions import AdminRowActionsMixin
     ...
     
     class ExampleAdmin(AdminRowActionsMixin, admin.ModelAdmin):
@@ -84,3 +78,5 @@ Credits
 Inspired (and code based on): [django-object-actions](https://github.com/crccheck/django-object-actions)
 
 Includes parts of [jquery-dropdown](http://labs.abeautifulsite.net/jquery-dropdown/); credits go to Cory LaViska.
+
+Inspired (and code based on): [django-admin-row-actions](https://github.com/DjangoAdminHackers/django-admin-row-actions)

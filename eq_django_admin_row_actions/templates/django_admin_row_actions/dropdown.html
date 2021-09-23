@@ -16,6 +16,9 @@
                     {% else %}
 
                     <a class="{{ item.classes }}" href="{{ item.url }}" title="{{ item.tooltip }}">{{ item.label }}
+                        {% if item.imgsrc %}
+                            <img style='float: left; margin-right: 5px;' src="{% static item.imgsrc %}" />
+                        {% endif %}
                     </a>
                     {% endif %}
                 {% else %}

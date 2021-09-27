@@ -89,7 +89,7 @@ class AdminRowActionsMixin(object):
         items = self.get_actions_list(obj)
         if items:
             html = Dropdown(
-                label=_("Actions"),
+                label=_("Acciones"),
                 items=items,
                 request=getattr(self, '_request')
             ).render()
@@ -98,7 +98,7 @@ class AdminRowActionsMixin(object):
             else:
                 return mark_safe(html)
         return ''
-    _row_actions.short_description = ''
+    _row_actions.short_description = 'Acciones'
 
     if VERSION < (1, 9):
         _row_actions.allow_tags = True
